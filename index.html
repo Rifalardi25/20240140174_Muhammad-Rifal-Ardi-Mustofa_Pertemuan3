@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Week 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Asisten AI Untuk UMKM</h1>
+        <p>Solusi Website Cerdas untuk Digitalisasi Bisnis Anda</p>
+    </header>
+    
+    <nav>
+        <a href="#formdata">Formulir Pemesanan</a>
+        <a href="#profile">Profil Kami</a>
+        <a href="#project">Portofolio Project</a>
+    </nav>
+    
+    <main>
+        <section id="profile">
+            <h2>Tentang Kami</h2>
+            <img src="https://img.magnific.com/premium-vector/tech-startup-logo-concept-company-branding_1012729-16196.jpg" alt="Tim Startup Kami">
+            <p>Kami adalah startup teknologi yang berdedikasi untuk membantu UMKM naik kelas. 
+                Kami menyediakan layanan pembuatan website profesional yang terintegrasi dengan teknologi Asisten AI 
+                untuk mempermudah operasional bisnis Anda.</p>
+        </section>
+    
+        <br>
+        
+        <section id="formdata">
+            <h2>Formulir Pengajuan Pembuatan Website</h2>
+            <form action="#">
+                <label for="umkm">Masukkan Nama UMKM</label>
+                <input type="text" id="umkm" name="umkm" required>
+                <br><br>
+                
+                <label for="pemilik">Masukkan Nama Pemilik</label>
+                <input type="text" id="pemilik" name="pemilik" required>
+                <br><br>
+                
+                <label for="telepon">Masukkan Nomor Telepon / WhatsApp</label>
+                <input type="tel" id="telepon" name="telepon" required>
+                <br><br>
+                
+                <fieldset id="jenisusaha">
+                    <legend>Kategori Jenis Usaha</legend>
+                    <input type="radio" name="jenisusaha" id="jasa" value="jasa" required>
+                    <label for="jasa">Jasa</label>
+                    
+                    <!-- id diubah menjadi fnb (tanpa &) agar tidak error di HTML -->
+                    <input type="radio" name="jenisusaha" id="fnb" value="fnb">
+                    <label for="fnb">F&B (Makanan/Minuman)</label>
+                    
+                    <input type="radio" name="jenisusaha" id="perdagangan" value="perdagangan">
+                    <label for="perdagangan">Perdagangan / Retail</label>
+                    
+                    <input type="radio" name="jenisusaha" id="lainnya" value="lainnya">
+                    <label for="lainnya">Lainnya</label>
+                </fieldset>
+                <br>
+                
+                <label for="alamat">Masukkan Alamat Bisnis</label> <br>
+                <textarea id="alamat" name="alamat" rows="3" required></textarea>
+                <br><br>
+                
+                <!-- Label diubah dari tanggal lahir menjadi target waktu yang lebih relevan untuk klien -->
+                <label for="tanggal">Rencana Tanggal Website Di-launching</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+                <br><br>
+                
+                <button type="submit">Kirim Pengajuan</button>
+            </form>
+        </section>
+
+        <section id="project">
+            <br>
+            <h2>Project Kami</h2>
+                <div id="produk-img">
+                    <img src="image1.png">
+                    <img src="image2.png">
+                    <img src="image3.png">
+                    <img src="image4.png">
+                </div>
+        </section>
+    </main>
+    
+    <br>
+    
+    <footer>
+        <hr>
+        <h3>Hubungi Kami di Media Sosial</h3>
+        <a href="https://instagram.com" target="_blank">Instagram</a> |
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <br><br>
+    </footer>
+</body>
+</html>
